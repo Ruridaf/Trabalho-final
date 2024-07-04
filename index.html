@@ -32,12 +32,23 @@
         Tecnologia que permite fazer um registo descentralizado de transações em blocos encadeados de maneira cronológica e sequencial com anonimato, segurança, transparência e imutabilidade
     </p>
 
-    <h2>Funcionamento</h2>
-    <p>
-        Após ser criada, uma transação é criptografada através de hash (anonimato).<br> A transação é enviada para validação pelos nós da rede através de uma das provas de consenso existentes (segurança).<br> Transações validadas são agrupadas em um bloco e enviadas para a rede. Cada bloco está ligado ao bloco anterior através de um hash para tornar a alteração de registos anteriores praticamente impossível (imutabilidade).<br> Quando o novo bloco é enviado para a rede, todos os nós da rede são atualizados e a blockchain fica com a mesma informação, garantindo a transparência.
-    </p>
-
-    <h2>Exemplos e as suas diferenças</h2>
+    <br><h2>Funcionamento</h2>
+    <ul>
+        <li>
+            Após ser criada, uma transação é criptografada através de hash (anonimato).
+        </li>
+        <li>
+            A transação é enviada para validação pelos nós da rede através de uma das provas de consenso existentes (segurança).
+        </li>
+        <li>
+            Transações validadas são agrupadas em um bloco e enviadas para a rede. Cada bloco está ligado ao bloco anterior através de um hash para tornar a alteração de registos anteriores praticamente impossível (imutabilidade).
+        </li>
+        <li>
+            Quando o novo bloco é enviado para a rede, todos os nós da rede são atualizados e a blockchain fica com a mesma informação, garantindo a transparência.
+        </li>
+    </ul>
+    
+    <br><h2>Exemplos e as suas diferenças</h2>
     <p>
         Vou optar pelas duas maiores e mais reconhecidas blockchain: Bitcoin e Ethereum.
     </p>
@@ -56,13 +67,24 @@
         </li>
     </ul>
 
-    <h1>Mining e Stacking</h1><br>
+    <br><h1>Mining e Stacking</h1><br>
     <h2>Distingue as principais diferenças</h2>
     <p>
-        Ambos são processos de validação dentro de uma rede blockchain, mas diferentes na utilização.<br><br> Enquanto o mining utiliza tipicamente o algoritmo de consenso Proof of Work e a recompensa é baseada na capacidade de processamento do hardware (resolver problemas matemáticos), o stacking utiliza o Proof of Stake e a recompensa é baseada na quantidade de ativos bloqueados.<br> No mining, como é necessário hardware bastante caro e específico como ASICs ou GPUs potentes, não só o custo de entrada é elevado como consome uma grande quantidade de energia elétrica.<br> Inversamente, o stacking pode ser efetuado com um computador comum ou smartphone com baixo consumo energético e “apenas” necessário deter o ativo que se pretende fazer stack na quantidade requerida.
+        Ambos são processos de validação dentro de uma rede blockchain, mas diferentes na utilização.<br>
     </p>
+    <ul>
+        <li>
+            Enquanto o mining utiliza tipicamente o algoritmo de consenso Proof of Work e a recompensa é baseada na capacidade de processamento do hardware (resolver problemas matemáticos), o stacking utiliza o Proof of Stake e a recompensa é baseada na quantidade de ativos bloqueados.
+        </li>
+        <li>
+            No mining, como é necessário hardware bastante caro e específico como ASICs ou GPUs potentes, não só o custo de entrada é elevado como consome uma grande quantidade de energia elétrica.
+        </li>
+        <li>
+            Inversamente, o stacking pode ser efetuado com um computador comum ou smartphone com baixo consumo energético e “apenas” necessário deter o ativo que se pretende fazer stack na quantidade requerida.
+        </li>
+    </ul>
 
-    <h2>Enumera três exemplos e detalha um a teu gosto</h2>
+    <br><h2>Enumera três exemplos e detalha um a teu gosto</h2>
     <h4>Mining:</h4>
     <ul>
         <li>Bitcoin (BTC)</li>
@@ -76,25 +98,80 @@
         <li>Polkadot (DOT)</li>
         <li>Cardano (ADA)</li>
     </ul>
+    <br>
 
-    <p>
-        A Cardano é uma blockchain que utiliza o algoritmo de consenso Proof of Stake (PoS).<br> Funciona com pools de staking que mantêm os nós na rede. Cada pool compete entre si para validar blocos e adicionar transações à blockchain.<br> Quem quiser fazer staking tem de delegar a moeda (ADA) para os pools de staking; no entanto, a propriedade das moedas não é transferida para a pool.<br> A escolha do pool é importante pois a sua eficiência pode afetar os ganhos, embora possa variar, geralmente fica entre 4% e 6% ao ano, as recompensas são automaticamente adicionadas ao stake delegado.<br> A existência de múltiplos pools garante a descentralização da rede.<br> O comportamento honesto beneficia das recompensas enquanto um comportamento mal-intencionado é penalizado ao não receber nada.
-    </p>
+    <ul>
+        <li>
+            A Cardano é uma blockchain que utiliza o algoritmo de consenso Proof of Stake (PoS).
+        </li>
+        <li>
+            Funciona com pools de staking que mantêm os nós na rede. Cada pool compete entre si para validar blocos e adicionar transações à blockchain.
+        </li>
+        <li>
+            Quem quiser fazer staking tem de delegar a moeda (ADA) para os pools de staking; no entanto, a propriedade das moedas não é transferida para a pool.
+        </li>
+        <li>
+            A escolha do pool é importante pois a sua eficiência pode afetar os ganhos, embora possa variar, geralmente fica entre 4% e 6% ao ano, as recompensas são automaticamente adicionadas ao stake delegado.
+        </li>
+        <li>
+            A existência de múltiplos pools garante a descentralização da rede.
+        </li>
+        <li>
+            O comportamento honesto beneficia das recompensas enquanto um comportamento mal-intencionado é penalizado ao não receber nada.
+        </li>
+    </ul>
 
-    <h2>Características do algoritmo de consenso</h2>
-    <p>
-        O algoritmo de consenso é o mecanismo que vai garantir que todos os participantes da rede (nós) estão de acordo sobre o estado atual do blockchain.<br> Deve ser capaz de continuar a funcionar mesmo que alguns nós falhem ou tenham comportamentos mal-intencionados.<br> Garantir que apenas transações válidas são adicionadas à blockchain.<br> Deve ser escalável, ter a capacidade de manter o desempenho à medida que a rede cresce.<br> Garantir a segurança da rede e a integridade dos dados (que as transações não possam ser alteradas após serem adicionadas à blockchain) ou prevenção de ataques (como o ataque de 51%).<br> Promover a eficiência energética.<br> Pode ter mecanismos para votar e tomar decisões sobre atualizações ou mudanças na rede.
-    </p>
+    <br><h2>Características do algoritmo de consenso</h2>
+    <ul>
+        <li>
+            O algoritmo de consenso é o mecanismo que vai garantir que todos os participantes da rede (nós) estão de acordo sobre o estado atual do blockchain.
+        </li>
+        <li>
+            Deve ser capaz de continuar a funcionar mesmo que alguns nós falhem ou tenham comportamentos mal-intencionados.
+        </li>
+        <li>
+            Garantir que apenas transações válidas são adicionadas à blockchain.
+        </li>
+        <li>
+            Deve ser escalável, ter a capacidade de manter o desempenho à medida que a rede cresce.
+        </li>
+        <li>
+            Garantir a segurança da rede e a integridade dos dados (que as transações não possam ser alteradas após serem adicionadas à blockchain) ou prevenção de ataques (como o ataque de 51%).
+        </li>
+        <li>
+            Promover a eficiência energética.
+        </li>
+        <li>
+            Pode ter mecanismos para votar e tomar decisões sobre atualizações ou mudanças na rede.
+        </li>
+    </ul>
 
-    <h2>Diferenciar chaves públicas de privadas e as suas utilidades</h2>
-    <p>
-        A chave privada é gerada através de um algoritmo de criptografia assimétrica (geralmente por software de carteira ou hardware dedicado) e deve ser mantida em segurança e em sigilo.<br> Serve para assinar digitalmente transações e provar a autorização do proprietário da conta.<br> Também é necessária para aceder e/ou gastar os ativos da carteira.
-    </p>
-    <p>
-        A chave pública é matematicamente derivada da chave privada e é utilizada para criar um endereço público da carteira. Este processo é unidirecional, ou seja, não é possível calcular a chave privada a partir da chave pública.<br> Pode ser partilhada com qualquer pessoa; aliás, é o endereço da carteira para onde são direcionados os ativos/valores que vamos receber de outra pessoa.<br> Também é utilizada para verificar a autenticidade das assinaturas feitas com a chave privada correspondente.
-    </p>
+    <br><h2>Diferenciar chaves públicas de privadas e as suas utilidades</h2>
+    <ul>
+        <li>
+            A chave privada é gerada através de um algoritmo de criptografia assimétrica (geralmente por software de carteira ou hardware dedicado) e deve ser mantida em segurança e em sigilo.
+        </li>
+        <li>
+            Serve para assinar digitalmente transações e provar a autorização do proprietário da conta.
+        </li>
+        <li>
+            Também é necessária para aceder e/ou gastar os ativos da carteira.
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li>
+            A chave pública é matematicamente derivada da chave privada e é utilizada para criar um endereço público da carteira. Este processo é unidirecional, ou seja, não é possível calcular a chave privada a partir da chave pública.
+        </li>
+        <li>
+            Pode ser partilhada com qualquer pessoa; aliás, é o endereço da carteira para onde são direcionados os ativos/valores que vamos receber de outra pessoa.
+        </li>
+        <li>
+            Também é utilizada para verificar a autenticidade das assinaturas feitas com a chave privada correspondente.
+        </li>
+    </ul>
 
-    <h1>ERC-20 o que trouxe de novo</h1>
+    <br><h1>ERC-20 o que trouxe de novo</h1>
     <p>
         O ERC-20 é um conjunto comum de regras de um token que é aplicado a um contrato inteligente.
     </p>
@@ -105,42 +182,93 @@
         <li>Simplicidade no desenvolvimento: com regras definidas foi também possível reduzir a complexidade e alargar o suporte a várias linguagens de programação.</li>
     </ul>
 
-    <h1>Token Vs Dapp</h1>
+    <br><h1>Token Vs Dapp</h1>
     <h2>Características e diferenças</h2>
-    <p>
-        Os tokens são ativos criados e geridos em uma blockchain e representam valor, direitos ou serviços nessa rede.<br> Utilizam contratos inteligentes para definir regras e como funcionam.<br> Seguem um padrão como, por exemplo, o ERC-20 (existem outros).<br> Podem ser fungíveis, como o bitcoin, ou não fungíveis (NTFs), um token de algo único, como uma obra de arte digital.
-    </p>
-    <p>
-        As Dapps são aplicações descentralizadas que trabalham em cima de uma blockchain.<br> Utilizam contratos inteligentes para definir as regras e o funcionamento.<br> Podem ter uma interface de utilizador.
-    </p>
+    <ul>
+        <li>
+            Os tokens são ativos criados e geridos em uma blockchain e representam valor, direitos ou serviços nessa rede.
+        </li>
+        <li>
+            Utilizam contratos inteligentes para definir regras e como funcionam.
+        </li>
+        <li>
+            Seguem um padrão como, por exemplo, o ERC-20 (existem outros).
+        </li>
+        <li>
+            Podem ser fungíveis, como o bitcoin, ou não fungíveis (NTFs), um token de algo único, como uma obra de arte digital.
+        </li>
+    </ul>
+    <br>
+    <ul>
+        <li>
+            As Dapps são aplicações descentralizadas que trabalham em cima de uma blockchain.
+        </li>
+        <li>
+            Utilizam contratos inteligentes para definir as regras e o funcionamento.
+        </li>
+        <li>
+            Podem ter uma interface de utilizador.
+        </li>
+    </ul>
 
-    <h2>Algumas diferenças:</h2>
+    <br><h2>Algumas diferenças:</h2>
     <ul>
         <li>Tokens são ativos de algum tipo, enquanto dApps são aplicações.</li>
         <li>Tokens podem ser usados dentro de dApps.</li>
         <li>Dapps têm funcionalidades mais complexas e interativas do que os tokens.</li>
     </ul>
 
-    <h2>Exemplos e utilidades</h2>
+    <br><h2>Exemplos e utilidades</h2>
+    <ul>
+        <li>
+            Token LINK é um utility token usado para pagar pelos serviços na rede Chainlink.
+        </li>
+        <li>
+            Token Uniswap (UNI) é um governance token que permite votar em propostas de administração da Uniswap.
+        </li>
+    </ul>
     <p>
-        Token LINK é um utility token usado para pagar pelos serviços na rede Chainlink.<br> Token Uniswap (UNI) é um governance token que permite votar em propostas de administração da Uniswap.
+        Lojas descentralizadas:
     </p>
-    <p>
-        Lojas descentralizadas:<br> Dapp OpenSea é um site/plataforma descentralizada para compra e venda de NFTs.<br> DeFi – Finanças descentralizadas: Uniswap permite a troca descentralizada e sem intermediários de tokens.
-    </p>
+    <ul>
+        <li>
+            Dapp OpenSea é um site/plataforma descentralizada para compra e venda de NFTs.
+        </li>
+        <li>
+            DeFi – Finanças descentralizadas: Uniswap permite a troca descentralizada e sem intermediários de tokens.
+        </li>
+    </ul>
 
-    <h1>Sobre a Dapp Illuvium</h1>
+    <br><h1>Sobre a Dapp Illuvium</h1>
     <h2>Descrever detalhadamente o seu enquadramento</h2>
-    <p>
-        Illuvium é um jogo de RPG (Role-Playing Game) com muito boa qualidade gráfica, lançado em 2021 pela Illuvium Labs.<br> Os jogadores exploram os cenários do jogo e capturam criaturas chamadas Illuvials, que também podem lutar entre si ou criar equipas de Illuvials para lutar com outros jogadores.<br> Os Illuvials, na realidade, são NFTs (tokens não fungíveis), cada um com características únicas, como habilidades e classes.<br>
+    <ul>
+        <li>
+            Illuvium é um jogo de RPG (Role-Playing Game) com muito boa qualidade gráfica, lançado em 2021 pela Illuvium Labs.
+        </li>
+        <li>
+            Os jogadores exploram os cenários do jogo e capturam criaturas chamadas Illuvials, que também podem lutar entre si ou criar equipas de Illuvials para lutar com outros jogadores.
+        </li>
+        <li>
+            Os Illuvials, na realidade, são NFTs (tokens não fungíveis), cada um com características únicas, como habilidades e classes.
+        </li>
+        <li>
+            Estes NFTs podem ser treinados para ficarem mais fortes ou com habilidades especiais, o que os torna mais valiosos.
+        </li>
+        <li>
+            Como NFTs, são únicos e pertencem ao jogador, que pode trocá-los, vendê-los ou comprá-los.
+        </li>
+    </ul>
 
- Estes NFTs podem ser treinados para ficarem mais fortes ou com habilidades especiais, o que os torna mais valiosos.<br> Como NFTs, são únicos e pertencem ao jogador, que pode trocá-los, vendê-los ou comprá-los.
-    </p>
-
-    <h2>Identificar a blockchain que usa e os tipos de fees</h2>
-    <p>
-        O Illuvium funciona na blockchain Ethereum.<br><br> Como as taxas de transação na rede principal do Ethereum são caras, optaram por uma solução de escalonamento em Layer 2 denominada Immutable X (IMX), o que permite transações rápidas e sem os custos elevados da rede principal, garantindo aos jogadores realizar múltiplas ações no jogo de maneira rápida e sem preocupação com os custos.
-    </p>
+    <br><h2>Identificar a blockchain que usa e os tipos de fees</h2>
+    <ul>
+        <li>
+            O Illuvium funciona na blockchain Ethereum.
+        </li>
+        <li>
+            Como as taxas de transação na rede principal do Ethereum são caras, optaram por uma solução de escalonamento em Layer 2 denominada Immutable X (IMX), o que permite transações rápidas e sem os custos elevados da rede principal, garantindo aos jogadores realizar múltiplas ações no jogo de maneira rápida e sem preocupação com os custos.
+        </li>
+    </ul>
+    
     <p>
         Fees pagos pelos jogadores:
     </p>
@@ -150,10 +278,22 @@
         <li>O Illuvium tem 5% de fee sobre as vendas para staking do seu próprio token Illuvium (ILV).</li>
     </ul>
 
-    <h2>Explicar o seu funcionamento e as mais-valias que um utilizador terá na sua utilização</h2>
-    <p>
-        Os jogadores exploram o mundo de Illuvium, descobrem e capturam Illuvials, podem formar equipas de Illuvials para combater em PVE ou contra outros jogadores.<br> O jogo tem um mercado interno onde se pode comprar, vender e trocar Illuvials ou outros itens do jogo.<br> A economia do jogo gira em torno dos NFTs (Illuvials) e do token Illuvium (ILV).<br> Os titulares de tokens ILV podem participar da administração do projeto ao votar nas propostas e decisões importantes para o desenvolvimento do jogo.
-    </p>
+    <br><h2>Explicar o seu funcionamento e as mais-valias que um utilizador terá na sua utilização</h2>
+    <ul>
+        <li>
+            Os jogadores exploram o mundo de Illuvium, descobrem e capturam Illuvials, podem formar equipas de Illuvials para combater em PVE ou contra outros jogadores.
+        </li>
+        <li>
+            O jogo tem um mercado interno onde se pode comprar, vender e trocar Illuvials ou outros itens do jogo.
+        </li>
+        <li>
+            A economia do jogo gira em torno dos NFTs (Illuvials) e do token Illuvium (ILV).
+        </li>
+        <li>
+            Os titulares de tokens ILV podem participar da administração do projeto ao votar nas propostas e decisões importantes para o desenvolvimento do jogo.
+        </li>
+    </ul>
+    <br>
     <ul>
         <li>O jogador é o proprietário dos NFTs e pode vendê-los, o que permite ganhar criptomoedas que podem transformar-se em dinheiro real.</li>
         <li>O jogador pode influenciar o desenvolvimento do jogo através dos tokens ILV.</li>
